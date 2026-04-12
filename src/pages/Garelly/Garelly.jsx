@@ -14,12 +14,6 @@ const galleryImages = [
   { src: "/images/food.png", alt: "Elegant bridal suite" },
   { src: "/images/drink.png", alt: "Elegant bridal suite" },
 
-  { src: "/images/garden1.png", alt: "Romantic wedding decorations" },
-  { src: "/images/garden2.png", alt: "Sophisticated table settings" },
-  { src: "/images/garden3.png", alt: "Wedding venue lighting design" },
-  { src: "/images/garden4.png", alt: "Elegant bridal suite" },
-  { src: "/images/garden5.png", alt: "Elegant bridal suite" },
-
   { src: "/images/weddinghall9.jpg", alt: "Outdoor wedding garden" },
   { src: "/images/weddinghall10.jpg", alt: "Wedding reception dining area" },
   { src: "/images/weddinghall11.jpg", alt: "Wedding venue entrance" },
@@ -36,15 +30,11 @@ const galleryImages = [
   { src: "/images/penthouse6.JPG", alt: "Penthouse bathroom suite" },
 
   { src: "/images/kitchen1.JPG", alt: "Elegant kitchen interior" },
-  { src: "/images/kitchen2.JPG", alt: "Modern kitchen appliances" },
-  { src: "/images/kitchen3.JPG", alt: "Kitchen island and seating" },
-
   { src: "/images/parking1.JPG", alt: "Elegant parking facility" },
   { src: "/images/parking2.JPG", alt: "Premium parking facility" },
   
   { src: "/images/tent1.JPG", alt: "Elegant wedding tent" },
   { src: "/images/tent2.JPG", alt: "Elegant wedding tent" },
-  { src: "/images/tent3.JPG", alt: "Elegant wedding tent" },
 
 ];
 
@@ -106,8 +96,8 @@ export default function Garelly() {
         <div className="relative z-20 mx-auto flex min-h-[62vh] max-w-[1600px] items-center justify-center px-5 text-center sm:px-6 md:px-8 lg:px-10">
           <div className="pt-28 pb-14 md:pt-32 md:pb-20">
             <p className="text-[16px] font-medium uppercase tracking-[0.22em] text-white/85 sm:text-[17px]">
-              Wonder Valley Ranch Resort
-            </p>
+              Luxury Garden Palace
+            </p>  
 
             <h1
               className="mt-4 text-[54px] font-normal leading-[0.95] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)] sm:text-[70px] md:text-[90px] lg:text-[108px]"

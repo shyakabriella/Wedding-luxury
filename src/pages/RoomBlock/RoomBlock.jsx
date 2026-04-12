@@ -215,7 +215,7 @@ export default function RoomBlock() {
 
       {/* HOUSES */}
       <RoomCarouselSection
-        title="Houses"
+        title="Penthouses"
         subtitle="Sleeps 6-20"
         description="For larger delegations or close-knit groups, these accommodations offer added space to stretch out and call home. Options include the three-bedroom Chairman's Suite which features a wraparound porch, kitchenette, and dining room or the larger Mill Creek Suite, with five bedrooms, a full kitchen, and a laundry room."
         images={houseImages}

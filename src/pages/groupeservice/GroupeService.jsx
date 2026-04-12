@@ -224,7 +224,7 @@ export default function GroupeService() {
       <section className="bg-[#f3f2ed] py-16 sm:py-20 md:py-24 lg:py-28">
         <div className="mx-auto max-w-[980px] px-5 text-center sm:px-6 md:px-8">
           <p className="text-[17px] tracking-[0.04em] text-[#a37f58] sm:text-[19px]">
-            Fresno Outdoor Wedding Venues
+            Luxury Wedding Venues in Kigali, Rwanda
           </p>
 
           <h2
@@ -237,11 +237,12 @@ export default function GroupeService() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-[840px] text-[17px] leading-[1.9] text-[#222] sm:text-[18px] md:text-[19px]">
-            Weddings at Luxury Garden Palace  are fully immersive. Our
-            grounds are designed to be enjoyed by you, your wedding party, and
-            your guests, making for an intimate experience that speaks to your
-            unique story. Customize, personalize, and modify—this is your
-            special day. You deserve to celebrate it however you see fit.
+            Weddings at Luxury Garden Palace are fully immersive. Our venue is
+            designed to provide you, your wedding party, and your guests with
+            an exceptional experience that reflects your unique love story.
+            From our beautiful ceremony gardens to our elegant reception halls,
+            luxury accommodations, bar & lounge, and spa facilities—customize
+            and personalize every detail to create the celebration of your dreams.
           </p>
         </div>
       </section>
@@ -266,12 +267,14 @@ export default function GroupeService() {
               <br />
               of It
             </h2>
-
+            
             <p className="mt-6 text-[17px] leading-[1.9] text-[#202020] sm:text-[18px] md:text-[19px]">
-              With a number of outdoor activities available at Luxury Garden Palace
-              —horseback riding, canoeing, and tennis, just to name a few—
-              it’s all too easy to provide your guests with some extra fun
-              while they’re here for your Fresno-area wedding.
+              With a range of luxury amenities available at Luxury Garden Palace
+              —including our exclusive bar & lounge, sauna and spa facilities, 
+              beautifully appointed rooms and apartments—your guests can enjoy 
+              an unforgettable celebration experience. Create lasting memories 
+              with premium accommodations and world-class services right at your 
+              wedding venue in the heart of Kigali.
             </p>
           </div>
         </div>

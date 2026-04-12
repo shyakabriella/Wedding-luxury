@@ -57,8 +57,8 @@ export default function TopNav() {
             <p className="mx-auto max-w-[920px] text-[14px] leading-[1.45] text-[#1f1f1f] xl:text-[16px]">
               We&apos;re giving away the ultimate wedding bundle to help you
               celebrate. Enter for a chance to win a curated collection of
-              Wonder Valley essentials for you and your guests.
-            </p>
+              Luxury Garden Palace essentials for you and your guests.
+            </p>  
           </div>
 
           <div className="flex justify-end">

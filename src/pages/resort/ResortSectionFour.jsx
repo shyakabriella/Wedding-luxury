@@ -60,7 +60,7 @@ export default function ResortSectionFour() {
                 src="/images/exterior1.JPG"
                 alt="Aerial view of Wonder Valley"
                 className="h-[240px] w-full object-cover sm:h-[300px] md:h-[360px] lg:h-[420px] xl:h-[460px]"
-              />
+              />  
             </div>
 
             {/* Small image mobile */}
