@@ -102,21 +102,19 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-0 right-0 z-[60] transition-all duration-300 ${
-        isScrolled ? "top-0 lg:top-[116px]" : "top-[104px] lg:top-[116px]"
-      }`}
+      className="fixed left-0 right-0 top-[40px] z-[60] transition-all duration-300"
     >
       <div
-        className={`border-b border-white/30 transition-all duration-300 ${
+        className={`transition-all duration-300 ${
           hasSolidHeader
-            ? "bg-[rgba(110,116,120,0.88)] shadow-xl backdrop-blur-md"
-            : "bg-[rgba(120,126,130,0.52)] backdrop-blur-sm"
+            ? "border-b border-white/20 bg-[rgba(110,116,120,0.88)] shadow-xl backdrop-blur-md"
+            : "border-b border-transparent bg-transparent"
         }`}
       >
         <div className="mx-auto max-w-[1800px] px-4 sm:px-6 lg:px-8 xl:px-10">
           {/* Mobile */}
           <div
-            className={`flex items-center justify-center lg:hidden ${
+            className={`flex items-center justify-center lg:hidden transition-all duration-300 ${
               hasSolidHeader ? "min-h-[92px]" : "min-h-[118px]"
             }`}
           >
@@ -148,9 +146,9 @@ export default function Header() {
                     <span className="relative">
                       {item.label}
                       <span
-                        className={`absolute -bottom-[10px] left-0 h-[1.5px] w-full bg-white/90 transition-all duration-300 ${
+                        className={`absolute -bottom-[10px] left-0 h-[1.5px] w-full bg-white/90 origin-center transition-all duration-300 ${
                           isActive ? "scale-x-100" : "scale-x-0"
-                        } origin-center`}
+                        }`}
                       />
                     </span>
                   )}

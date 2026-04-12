@@ -22,6 +22,7 @@ export default function TopNav() {
         hideMobileTopNav ? "-translate-y-full lg:translate-y-0" : "translate-y-0"
       }`}
     >
+<<<<<<< HEAD
       {/* Top white promotional bar */}
       <div className="bg-[#f5f5f3]">
         {/* Mobile */}
@@ -73,10 +74,15 @@ export default function TopNav() {
       </div>
 
       {/* Bottom gold bar */}
+=======
+      {/* Bottom gold bar only */}
+>>>>>>> 26d59c662570e0ffbeb346429319a3497d2c4e33
       <div className="h-[40px] bg-[#a18a4d]">
         <div className="mx-auto flex h-full max-w-[1900px] items-center justify-center px-4">
           <a
-            href="/"
+            href="https://www.luxurygardenpalace.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 text-center text-[10px] font-normal uppercase tracking-[0.14em] text-white transition hover:opacity-90 sm:text-[11px] md:text-[13px]"
           >
             <span className="text-[14px] leading-none md:text-[16px]">‹</span>

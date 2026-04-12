@@ -92,10 +92,10 @@ export default function Layouts() {
       <main
         className={`${
           isStartPlanningPage
-            ? "pt-[196px] lg:pt-[184px]"
+            ? "pt-[132px] lg:pt-[140px]"
             : isOverlayPage
-            ? "pt-[104px] lg:pt-[116px]"
-            : "pt-[196px] lg:pt-[208px]"
+            ? "pt-[40px] lg:pt-[40px]"
+            : "pt-[132px] lg:pt-[140px]"
         } ${isStartPlanningPage ? "pb-0" : "pb-[74px] lg:pb-0"}`}
       >
         <Outlet />
