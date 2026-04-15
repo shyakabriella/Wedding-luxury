@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const galleryImages = [
   { image: "images/venues.png", alt: "Meeting session at the resort" },
-  { image: "images/5K8A0704.jpg", alt: "Wonder Valley entrance view" },
+  { image: "images/5K8A0704.jpg", alt: "Luxury Garden Palace entrance view" },
   { image: "/images/tent4.png", alt: "Resort dining experience" },
   { image: "/images/wedding2.png", alt: "Horse carriage activity at the resort" },
 ];

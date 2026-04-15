@@ -65,7 +65,7 @@ const drinkCards = [
   },
   {
     title: "HOUSE",
-    image: "/images/drink.png",
+    image: "images/luxdinning1.jpg",
     items: [
       "Beer",
       "Wine",
@@ -76,7 +76,7 @@ const drinkCards = [
   },
   {
     title: "CALL",
-    image: "/images/bar1.jpg",
+    image: "images/luxuryfooddecoration6.JPG",
     items: [
       "Beer",
       "Wine",
@@ -187,7 +187,7 @@ export default function Package() {
       {/* HERO */}
       <section className="relative min-h-[68vh] overflow-hidden">
         <img
-          src="/images/package.jpg"
+          src="/images/weddgarden2.jpg"
           alt="Wedding packages hero"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -221,11 +221,11 @@ export default function Package() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-[840px] text-[17px] leading-[1.9] text-[#222] sm:text-[18px] md:text-[19px]">
-            Once you book your date with Wonder Valley, pop the bubbly and let’s
-            celebrate! Whether you’re dreaming of an intimate wedding ceremony
-            or a grand celebration, you can trust us to turn your vision into
-            the special day you’ve always imagined with some of the best—and
-            most inclusive—wedding packages in Fresno, CA.
+            Once you book your date with Luxury Garden Palace, pop the bubbly
+            and let's celebrate! Whether you're dreaming of an intimate wedding
+            ceremony or a grand celebration, you can trust us to turn your
+            vision into the special day you've always imagined with some of the
+            best—and most inclusive—wedding packages in Kigali, Rwanda.
           </p>
         </div>
       </section>
@@ -242,7 +242,7 @@ export default function Package() {
       <PackageSplitSection
         title="The Premium Package"
         items={premiumPackage}
-        image="/images/desert4.jpg"
+        image="images/exterior12.jpg"
         reverse
       />
 

@@ -2,25 +2,25 @@ import React, { useEffect } from "react";
 
 const venues = [
   {
-    title: "Green Garden",
-    size: "5,005 SQ. FT. | UP TO 350 GUESTS",
-    image: "/images/garden5.png",
+    title: "Garden Ceremony Venue",
+    size: "OUTDOOR VENUE | UP TO 500 GUESTS",
+    image: "/images/weddgarden2.jpg",
     description:
-      "Set against a verdant backdrop with stunning views of a tranquil  in the foothills of the Garden is an expansive outdoor venue that exudes storybook charm. The natural beauty creates a serene and romantic setting, perfect for exchanging vows under the sky.",
+      "Set against a verdant backdrop with stunning views of lush gardens, our outdoor ceremony venue exudes elegance and romance. The natural beauty creates a serene and picturesque setting, perfect for exchanging vows under the open sky in the heart of Kigali.",
   },
   {
-    title: "Legacy Lodge Patio",
-    size: "1,400 SQ. FT. | UP TO 100 GUESTS",
-    image: "/images/exclusivelounge2.jpg",
+    title: "Wedding Reception Hall",
+    size: "INDOOR VENUE | UP TO 400 GUESTS",
+    image: "/images/weddinghall1.png",
     description:
-      "After gathering to witness your ceremony, guests are invited to enjoy a sophisticated reception on the Legacy Lodge Patio. An ideal setting for mixing and mingling before the official festivities, every detail here is framed by serene lake and lush landscapes.",
+      "After your beautiful ceremony, guests are invited to celebrate in our sophisticated reception hall. An ideal setting for dining, dancing, and celebration, every detail is designed with luxury and elegance in mind, creating unforgettable memories for you and your guests.",
   },
   {
-    title: "Legacy Lodge",
-    size: "3,901 SQ. FT. | UP TO 350 GUESTS",
-    image: "/images/bed4.JPG",
+    title: "Bar & Lounge",
+    size: "PREMIUM LOUNGE | UP TO 150 GUESTS",
+    image: "/images/lounge1.png",
     description:
-      "For the reception, the spacious Legacy Lodge transforms into a dreamy venue, blending rustic charm with elegant touches. This enchanting space combines breathtaking views with refined design, setting the stage for unforgettable celebrations.",
+      "Our exclusive bar and lounge area offers the perfect space for cocktail hours and intimate gatherings. Enjoy premium beverages, expert mixology, and a relaxed atmosphere that complements your special celebration with style and sophistication.",
   },
 ];
 
@@ -54,20 +54,21 @@ export default function Venues() {
       {/* INTRO */}
       <section className="text-center py-16 px-6">
         <p className="text-[#a88f53] uppercase tracking-[0.2em] text-[13px]">
-          Dreamy Wedding Venues Fresno CA
+          Luxury Wedding Venues in Kigali, Rwanda
         </p>
 
         <h2
           className="mt-3 text-[42px] md:text-[60px] text-[#203549]"
           style={{ fontFamily: '"Cormorant Garamond", serif' }}
         >
-          Storybook Splendor
+          Elegant Celebration Spaces
         </h2>
 
         <p className="mt-6 max-w-[700px] mx-auto text-[16px] leading-[1.9] text-[#444]">
-          Discover the enchanting beauty of our exclusive wedding venues at the heart
-          of a picturesque California ranch near Fresno, CA. Each venue offers a unique
-          blend of natural splendor and elegant charm, perfect for creating timeless memories.
+          Discover the enchanting beauty of Luxury Garden Palace, Kigali's premier wedding destination. 
+          Our exclusive venues offer a unique blend of natural splendor, modern elegance, and world-class 
+          amenities including ceremony gardens, reception halls, bar & lounge, sauna, and luxury 
+          accommodations—perfect for creating timeless memories.
         </p>
 
         <div className="mt-8 flex justify-center gap-4 flex-wrap">
