@@ -27,8 +27,6 @@ export default function TopNav() {
         <div className="mx-auto flex h-full max-w-[1900px] items-center justify-center px-4">
           <a
             href="https://www.luxurygardenpalace.com/"
-            target="_blank"
-            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 text-center text-[10px] font-normal uppercase tracking-[0.14em] text-white transition hover:opacity-90 sm:text-[11px] md:text-[13px]"
           >
             <span className="text-[14px] leading-none md:text-[16px]">‹</span>
