@@ -22,7 +22,6 @@ export default function TopNav() {
         hideMobileTopNav ? "-translate-y-full lg:translate-y-0" : "translate-y-0"
       }`}
     >
-      {/* Bottom gold bar only */}
       <div className="h-[40px] bg-[#a18a4d]">
         <div className="mx-auto flex h-full max-w-[1900px] items-center justify-center px-4">
           <a
