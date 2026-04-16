@@ -56,7 +56,7 @@ export default function ResortSectionSeven() {
           >
             <div className="mx-auto w-full max-w-[980px] overflow-hidden">
               <img
-                src="public/images/5K8A0671.jpg"
+                src="/images/weddinghall6.jpg"
                 alt="Resort landscape"
                 className="h-[260px] w-full object-cover sm:h-[340px] md:h-[430px] lg:h-[520px]"
               />
@@ -77,27 +77,24 @@ export default function ResortSectionSeven() {
             }`}
           >
             <div className="mx-auto max-w-[560px] text-center lg:mx-0 lg:text-left">
-              <p className="text-[18px] font-medium text-[#a17d5a] sm:text-[20px] md:text-[22px]">
+              <p className="text-[14px] font-medium text-[#a17d5a] sm:text-[16px] md:text-[18px]">
                 Location
               </p>
 
-              <h2 className="mt-5 text-[42px] font-light leading-[0.95] tracking-[-0.03em] text-[#1e3b3d] sm:text-[56px] md:text-[70px] lg:text-[82px] xl:text-[90px]">
-                The Lay
-                <br />
-                Of The Land
+              <h2 className="mt-5 text-[20px] font-light leading-[0.98] tracking-[-0.03em] text-[#18393b] sm:text-[28px] md:text-[38px] lg:text-[44px]">
+                Our venues
               </h2>
 
-              <p className="mt-7 max-w-[520px] text-[17px] leading-[1.9] text-[#334243] sm:text-[18px] md:text-[19px]">
-                Our one-of-a-kind property sets the scene for exceptional
-                activities with state-of-the-art facilities. We invite you to
-                explore sports courts,swimming pools, biking
-                trails, a trampoline center, a paintball course, and so much
-                more.
+              <p className="mt-7 max-w-[520px] text-[14px] leading-[1.9] text-[#334243] sm:text-[15px] md:text-[16px]">
+                Our stunning venue sets the scene for exceptional wedding
+                celebrations with elegant gardens and luxurious facilities. We invite you to
+                explore our ceremony spaces, reception halls, bridal suites, 
+                cocktail terraces, and so much more.
               </p>
 
-              <button className="mt-9 inline-flex min-w-[160px] items-center justify-center bg-[#213739] px-8 py-4 text-[18px] font-normal text-white transition duration-300 hover:opacity-90">
+              <a href="/venues" target="_blank" className="mt-9 rounded-md inline-flex min-w-[160px] items-center justify-center bg-[#213739] px-8 py-4 text-[14px] font-normal text-white transition duration-300 hover:opacity-90">
                 Explore
-              </button>
+              </a>
             </div>
           </div>
         </div>

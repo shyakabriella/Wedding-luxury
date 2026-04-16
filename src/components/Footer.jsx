@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function FacebookIcon() {
   return (
@@ -42,58 +43,58 @@ function TikTokIcon() {
 export default function Footer() {
   return (
     <footer
-      className="bg-[#183236] text-white pb-[84px] lg:pb-0"
+      className="bg-[#183236] text-white"
       style={{ fontFamily: "Montserrat, sans-serif" }}
     >
       {/* top newsletter area */}
       <div className="border-b border-[#9b8754]">
-        <div className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 sm:py-12 md:px-8 lg:px-10">
+        <div className="mx-auto max-w-[1200px] px-5 py-12 sm:px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-[980px]">
-            <h2 className="text-center text-[32px] font-light leading-none tracking-[-0.03em] text-white sm:text-[44px] md:text-[54px] lg:text-[64px]">
+            <h2 className="text-center text-[28px] font-light leading-none tracking-[-0.03em] text-white sm:text-[38px] md:text-[46px]">
               Journey With Us
             </h2>
 
-            <form className="mt-8 sm:mt-10">
-              <div className="grid grid-cols-1 gap-3 md:grid-cols-[1fr_1fr_1fr_auto] md:gap-4">
+            <form className="mt-10">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-[1fr_1fr_1fr_auto]">
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="h-[50px] border border-[#9b8754] bg-transparent px-4 text-[15px] text-white outline-none placeholder:text-white/85"
+                  className="h-[46px] border border-[#9b8754] bg-transparent px-4 text-[14px] text-white outline-none placeholder:text-white/85"
                 />
 
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="h-[50px] border border-[#9b8754] bg-transparent px-4 text-[15px] text-white outline-none placeholder:text-white/85"
+                  className="h-[46px] border border-[#9b8754] bg-transparent px-4 text-[14px] text-white outline-none placeholder:text-white/85"
                 />
 
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="h-[50px] border border-[#9b8754] bg-transparent px-4 text-[15px] text-white outline-none placeholder:text-white/85"
+                  className="h-[46px] border border-[#9b8754] bg-transparent px-4 text-[14px] text-white outline-none placeholder:text-white/85"
                 />
 
                 <button
                   type="submit"
-                  className="h-[50px] min-w-[140px] bg-[#b39a60] px-6 text-[16px] font-normal text-white transition hover:opacity-90"
+                  className="h-[46px] min-w-[120px] bg-[#b39a60] px-6 text-[15px] font-normal text-white transition hover:opacity-90"
                 >
                   Sign Up
                 </button>
               </div>
 
               <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
-                <label className="flex items-start gap-3 text-[13px] leading-5 text-white/95">
+                <label className="flex items-start gap-3 text-[11px] text-white/95">
                   <input
                     type="checkbox"
-                    className="mt-1 h-3.5 w-3.5 shrink-0 appearance-none border border-[#9b8754] bg-transparent checked:bg-[#b39a60]"
+                    className="mt-1 h-3.5 w-3.5 appearance-none border border-[#9b8754] bg-transparent checked:bg-[#b39a60]"
                   />
                   <span>I have read and agree to the Privacy Policy.</span>
                 </label>
 
-                <label className="flex items-start gap-3 text-[13px] leading-5 text-white/95">
+                <label className="flex items-start gap-3 text-[11px] text-white/95">
                   <input
                     type="checkbox"
-                    className="mt-1 h-3.5 w-3.5 shrink-0 appearance-none border border-[#9b8754] bg-transparent checked:bg-[#b39a60]"
+                    className="mt-1 h-3.5 w-3.5 appearance-none border border-[#9b8754] bg-transparent checked:bg-[#b39a60]"
                   />
                   <span>
                     Yes, I would like to receive emails with exclusive specials
@@ -108,111 +109,91 @@ export default function Footer() {
 
       {/* middle footer content */}
       <div className="border-b border-[#9b8754]">
-        <div className="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 sm:py-12 md:px-8 md:py-14 lg:px-10">
+        <div className="mx-auto max-w-[1200px] px-5 py-14 sm:px-6 md:px-8 lg:px-10">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
-            {/* center block logo first on mobile */}
-            <div className="order-1 flex items-center justify-center md:order-2">
-              <a
-                href="/"
-                className="flex items-center justify-center rounded-2xl border border-white/15 bg-black/10 px-5 py-4 shadow-[0_10px_30px_rgba(0,0,0,0.22)] backdrop-blur-sm transition hover:scale-[1.02]"
-              >
-                <img
-                  src="/losgo.png"
-                  alt="Luxury Garden Palace Logo"
-                  className="h-[80px] w-auto max-w-[220px] object-contain drop-shadow-[0_6px_20px_rgba(0,0,0,0.55)] sm:h-[95px] md:h-[115px] lg:h-[125px]"
-                />
-              </a>
-            </div>
-
             {/* left block */}
-            <div className="order-2 text-center md:order-1 md:text-left">
+            <div className="text-center md:text-left">
               <div className="inline-flex flex-col items-center md:items-start">
-                <div className="text-[18px] font-semibold uppercase tracking-wide text-white sm:text-[22px]">
+                <div className="text-[15px] font-semibold uppercase tracking-wide text-white sm:text-[18px]">
                   Luxury Garden Palace
                 </div>
                 <div className="mt-1 h-[2px] w-[190px] bg-white/90" />
               </div>
 
-              <div className="mt-6 space-y-1 text-[15px] leading-[1.7] text-white/95 md:mt-10">
-                <p>Luxury Garden Palace Karama</p>
-                <p>Luxury Garden Palace Karama, KN 443 ST</p>
+              <div className="mt-5 space-y-1 text-[13px] leading-[1.65] text-white/95">
+                <p>Karama, KN 443 ST</p>
                 <p>+250 780 443 787</p>
               </div>
             </div>
 
+            {/* center block logo */}
+            <div className="flex items-center justify-center">
+              <a
+                href="/"
+                className="flex items-center justify-center rounded-2xl border border-white/15 bg-black/10 px-6 py-5 shadow-[0_10px_30px_rgba(0,0,0,0.22)] backdrop-blur-sm transition hover:scale-[1.02]"
+              >
+                <img
+                  src="/losgo.png"
+                  alt="Wonder Valley Logo"
+                  className="h-[70px] w-auto max-w-[180px] object-contain drop-shadow-[0_6px_20px_rgba(0,0,0,0.55)] sm:h-[85px] md:h-[95px] lg:h-[105px]"
+                />
+              </a>
+            </div>
+
             {/* right block */}
-            <div className="order-3">
-              <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 sm:text-left">
-                <div className="space-y-3">
-                  <a
-                    href="#"
-                    className="block text-[16px] text-[#b39a60] underline underline-offset-4"
-                  >
-                    Contact Us
-                  </a>
-                  <a
-                    href="#"
-                    className="block text-[16px] text-[#b39a60] underline underline-offset-4"
-                  >
-                    Careers
-                  </a>
-                  <a
-                    href="#"
-                    className="block text-[16px] text-[#b39a60] underline underline-offset-4"
-                  >
-                    Summer Camp
-                  </a>
-                </div>
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
+              <div className="space-y-3 text-center sm:text-left">
+                <a
+                  href="https://direct-book.com/properties/luxurygardenpalace/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-04-16&checkOutDate=2026-04-17&trackPage=yes"
+                  className="block text-[14px] text-[#b39a60] underline underline-offset-4"
+                >
+                  Contact Us
+                </a>
+                <a
+                  href="#"
+                  className="block text-[14px] text-[#b39a60] underline underline-offset-4"
+                >
+                  Careers
+                </a>
+                
+              </div>
 
-                <div className="space-y-3">
+              <div className="space-y-3 text-center sm:text-left">
+                <a
+                  href="#"
+                  className="block text-[14px] text-white underline underline-offset-4"
+                >
+                  Privacy Policy
+                </a>
+                
+                <a
+                  href="#"
+                  className="block text-[14px] text-white underline underline-offset-4"
+                >
+                  Sitemap
+                </a>
+                <div className="flex items-center justify-center gap-6 pt-8 sm:justify-start">
                   <a
                     href="#"
-                    className="block text-[16px] text-white underline underline-offset-4"
+                    aria-label="Facebook"
+                    className="text-white transition hover:text-[#b39a60]"
                   >
-                    Privacy Policy
+                    <FacebookIcon />
                   </a>
                   <a
                     href="#"
-                    className="block text-[16px] text-white underline underline-offset-4"
+                    aria-label="Instagram"
+                    className="text-white transition hover:text-[#b39a60]"
                   >
-                    Accessibility
+                    <InstagramIcon />
                   </a>
                   <a
                     href="#"
-                    className="block text-[16px] text-white underline underline-offset-4"
+                    aria-label="TikTok"
+                    className="text-white transition hover:text-[#b39a60]"
                   >
-                    Sitemap
+                    <TikTokIcon />
                   </a>
-                  <a
-                    href="#"
-                    className="block text-[16px] text-white underline underline-offset-4"
-                  >
-                    Consent Preferences
-                  </a>
-
-                  <div className="flex items-center justify-center gap-6 pt-5 sm:justify-start sm:pt-8">
-                    <a
-                      href="#"
-                      aria-label="Facebook"
-                      className="text-white transition hover:text-[#b39a60]"
-                    >
-                      <FacebookIcon />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Instagram"
-                      className="text-white transition hover:text-[#b39a60]"
-                    >
-                      <InstagramIcon />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="TikTok"
-                      className="text-white transition hover:text-[#b39a60]"
-                    >
-                      <TikTokIcon />
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
@@ -222,9 +203,13 @@ export default function Footer() {
 
       {/* bottom footer bar */}
       <div>
-        <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-3 px-4 py-5 text-center text-[12px] leading-5 text-white/90 sm:px-6 sm:text-[13px] md:flex-row md:px-8 lg:px-10">
+        <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-4 px-5 py-6 text-center text-[11px] text-white/90 sm:px-6 md:flex-row md:px-8 lg:px-8">
           <p>Luxury Garden Palace. 2026. All Rights Reserved.</p>
-          <p>Website Designed In partnership with African Safari & Hotel Booking Hub</p>
+          <p>In partnership with {" "}
+             <Link to="https://www.ashbhub.com/" target="_blank" className="text-[#b39a60] hover:underline">
+                African Safari & Hotel Booking Hub
+             </Link>
+          </p>
         </div>
       </div>
     </footer>

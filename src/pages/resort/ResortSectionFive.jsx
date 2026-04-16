@@ -52,24 +52,21 @@ export default function ResortSectionFive() {
             }`}
           >
             <div className="mx-auto max-w-[520px] text-center lg:mx-0 lg:text-left">
-              <p className="text-[18px] font-medium text-[#a07d59] sm:text-[20px] md:text-[22px]">
-                Accommodations
+              <p className="text-[14px] font-medium text-[#a07d59] sm:text-[16px] md:text-[18px]">
+                Wedding Accommodations
               </p>
 
-              <h2 className="mt-5 text-[46px] font-light leading-[0.98] tracking-[-0.03em] text-[#18393b] sm:text-[58px] md:text-[70px] lg:text-[78px] xl:text-[84px]">
-                Cozy Lodging
+              <h2 className="mt-5 text-[20px] font-light leading-[0.98] tracking-[-0.03em] text-[#18393b] sm:text-[28px] md:text-[38px] lg:text-[44px]">
+                Luxury Guest Suites
               </h2>
 
-              <p className="mt-7 text-[17px] leading-[1.9] text-[#354344] sm:text-[18px] md:text-[19px]">
-                From homelike cottages to resort-style hotel rooms, our resort
-                offers classic accommodations for every guest. Settle into a
-                traditional living space with all the thoughtful guest
-                amenities, including complimentary Wi-Fi and in-room coffee
-                service.
+              <p className="mt-5 text-[12px] sm:text-[13px] md:text-[14px] leading-[1.8] text-[#354344]">
+                Provide your guests with elegant accommodations featuring modern amenities, 
+                comfortable furnishings, and beautiful views for an unforgettable wedding experience.
               </p>
 
-              <button className="mt-9 inline-flex min-w-[210px] items-center justify-center bg-[#1f3435] px-8 py-4 text-[18px] font-normal text-white transition duration-300 hover:opacity-90">
-                Learn More
+              <button className="mt-9 inline-flex min-w-[210px] items-center justify-center bg-[#1f3435] px-8 py-4 text-[14px] font-normal text-white transition duration-300 hover:opacity-90">
+                View Suites
               </button>
             </div>
           </div>
@@ -84,7 +81,7 @@ export default function ResortSectionFive() {
               <img
                 src="images/5K8A0795.jpg"
                 alt="Cozy lodging room"
-                className="h-[280px] w-full object-cover sm:h-[360px] md:h-[460px] lg:h-[540px] xl:h-[600px]"
+                className="h-[280px] rounded-md w-full object-cover sm:h-[360px] md:h-[460px] lg:h-[540px] xl:h-[600px]"
               />
             </div>
           </div>

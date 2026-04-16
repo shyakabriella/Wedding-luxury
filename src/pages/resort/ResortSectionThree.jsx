@@ -6,7 +6,7 @@ const slides = [
     eyebrow: "Why Choose Luxury Garden Palace?",
     title: "Easy to Plan",
     description:
-      "Our seamless event planning experience includes versatile venue options, on-site catering, bar service, conference suites, and overnight accommodations—all in one place, expertly managed by our team.",
+      "Our seamless event planning experience includes versatile venues for 1,000+ guests, along with on-site catering, bar service, conference suites, and overnight accommodations—all in one place, expertly managed by our team.",
     image: "images/exterior2.JPG",
   },
   {
@@ -41,7 +41,7 @@ export default function ResortSectionThree() {
           setShow(true);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
 
     if (currentSection) {
@@ -92,12 +92,12 @@ export default function ResortSectionThree() {
             {/* Left panel */}
             <div className="relative flex items-center px-6 py-10 sm:px-10 md:px-14 lg:px-16 xl:px-20">
               <div className="max-w-[430px]">
-                <p className="text-[16px] font-normal leading-[1.5] text-[#a18467] sm:text-[18px] md:text-[20px]">
+                <p className="text-[13px] font-normal leading-[1.5] text-[#a18467] sm:text-[15px] md:text-[16px]">
                   {activeSlide.eyebrow}
                 </p>
 
                 <h2
-                  className="mt-3 text-[44px] font-normal leading-[0.95] text-[#1d3146] sm:text-[54px] md:text-[62px] lg:text-[66px] xl:text-[72px]"
+                  className="mt-3 text-[30px] font-normal leading-[0.95] text-[#1d3146] sm:text-[38px] md:text-[44px] lg:text-[48px] xl:text-[52px]"
                   style={{
                     fontFamily: '"Cormorant Garamond", Georgia, serif',
                   }}
@@ -105,7 +105,7 @@ export default function ResortSectionThree() {
                   {activeSlide.title}
                 </h2>
 
-                <p className="mt-7 text-[17px] leading-[1.9] text-[#343434] sm:text-[18px] md:text-[19px]">
+                <p className="mt-7 text-[14px] leading-[1.9] text-[#343434] sm:text-[15px] md:text-[16px]">
                   {activeSlide.description}
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function ResortSectionThree() {
 
           {/* Big number */}
           <div
-            className="pointer-events-none absolute bottom-[-30px] right-[8px] text-[110px] font-light leading-none text-white/95 sm:bottom-[-36px] sm:right-[16px] sm:text-[130px] md:text-[150px] lg:bottom-[-40px] lg:right-[-8px] lg:text-[170px] xl:text-[190px]"
+            className="pointer-events-none absolute bottom-[-30px] right-[8px] text-[72px] font-light leading-none text-white/95 sm:bottom-[-36px] sm:right-[16px] sm:text-[86px] md:text-[98px] lg:bottom-[-40px] lg:right-[-8px] lg:text-[110px] xl:text-[124px]"
             style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
           >
             {activeSlide.id}

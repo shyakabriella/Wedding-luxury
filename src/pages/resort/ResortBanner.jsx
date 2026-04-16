@@ -11,7 +11,7 @@ const services = [
     "Ceremony Garden",
     "Two Wedding Party Day Use Rooms",
     "Tables, Chairs, Linens & Place Settings",
-    "Complimentary Cake Cutting",
+    "Complimentary Cake Planning",
   ],
   [
     "Hors D’oeuvres Patio",
@@ -31,14 +31,14 @@ export default function ResortBanner() {
 
           <div className="shrink-0 text-center">
             <p
-              className="mb-1 text-[14px] font-normal tracking-[0.06em] text-[#a37d4f] sm:text-[15px] md:text-[16px]"
+              className="mb-1 text-[11px] font-normal tracking-[0.06em] text-[#a37d4f] sm:text-[12px] md:text-[13px]"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
               Our Wedding
             </p>
 
             <h2
-              className="text-[34px] font-normal leading-[0.9] text-[#143554] sm:text-[42px] md:text-[50px] lg:text-[56px]"
+              className="text-[24px] font-normal leading-[0.9] text-[#143554] sm:text-[30px] md:text-[36px] lg:text-[40px]"
               style={{
                 fontFamily: '"Cormorant Garamond", Georgia, serif',
               }}
@@ -61,7 +61,7 @@ export default function ResortBanner() {
               {column.map((item) => (
                 <li
                   key={item}
-                  className="flex items-start gap-3 text-[15px] font-normal leading-[1.55] text-[#1f2f3a] sm:text-[16px] md:text-[17px]"
+                  className="flex items-start gap-3 text-[12px] font-normal leading-[1.55] text-[#1f2f3a] sm:text-[13px] md:text-[14px]"
                 >
                   <span className="mt-[9px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#8e6f54]" />
                   <span>{item}</span>

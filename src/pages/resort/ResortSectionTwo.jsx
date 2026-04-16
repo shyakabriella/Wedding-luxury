@@ -44,7 +44,7 @@ export default function ResortSectionTwo() {
               <img
                 src="/images/tent4.png"
                 alt="Bride holding bouquet"
-                className="h-[420px] w-full object-cover sm:h-[520px] md:h-[620px] lg:h-[710px] xl:h-[720px]"
+                className="h-[420px] rounded-md w-full object-cover sm:h-[520px] md:h-[620px] lg:h-[710px] xl:h-[720px]"
               />
             </div>
           </div>
@@ -58,25 +58,24 @@ export default function ResortSectionTwo() {
               }`}
             >
               <p
-                className="text-[14px] uppercase tracking-[0.08em] text-[#a77c55] sm:text-[15px] md:text-[16px]"
+                className="text-[11px] uppercase tracking-[0.08em] text-[#a77c55] sm:text-[12px] md:text-[13px]"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
-                Wedding Venues Near Fresno, CA
+                Wedding Venues Luxury
               </p>
 
               <h2
-                className="mt-3 max-w-[520px] text-[42px] font-normal leading-[0.95] text-[#18334a] sm:text-[52px] md:text-[60px] lg:text-[64px] xl:text-[68px]"
+                className="mt-3 max-w-[520px] text-[15px] font-normal leading-[0.95] text-[#18334a] sm:text-[20px] md:text-[30px] lg:text-[35px]"
                 style={{
                   fontFamily: '"Cormorant Garamond", Georgia, serif',
                 }}
               >
                 Envision Your
-                <br />
                 Special Day
               </h2>
 
               <p
-                className="mt-6 max-w-[560px] text-[15px] leading-[1.85] text-[#24343a] sm:text-[16px] md:text-[17px]"
+                className="mt-6 max-w-[560px] text-[13px] leading-[1.85] text-[#24343a] sm:text-[14px] md:text-[15px]"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 Luxury Garden Palace is a frontrunner in wedding venues
@@ -88,8 +87,9 @@ export default function ResortSectionTwo() {
               </p>
 
               <a
-                href="/take-a-tour"
-                className="mt-8 inline-flex h-[48px] min-w-[215px] items-center justify-center bg-[#a38b4c] px-8 text-[14px] font-medium uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-[#8f7941] sm:h-[50px] sm:min-w-[230px]"
+                href="/wedding-gallery"
+                target="_blank"
+                className="mt-8 rounded-md inline-flex h-[48px] min-w-[215px] items-center justify-center bg-[#a38b4c] px-8 text-[12px] font-medium uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-[#8f7941] sm:h-[50px] sm:min-w-[230px]"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
                 Take A Tour
@@ -106,7 +106,7 @@ export default function ResortSectionTwo() {
                 <img
                   src="images/weddinghall1.png"
                   alt="Couple enjoying wedding moment"
-                  className="h-[260px] w-full object-cover sm:h-[320px] md:h-[360px] lg:h-[335px] xl:h-[350px]"
+                  className="h-[260px] rounded-md w-full object-cover sm:h-[320px] md:h-[360px] lg:h-[335px] xl:h-[350px]"
                 />
               </div>
             </div>

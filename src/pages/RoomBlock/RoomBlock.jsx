@@ -42,11 +42,11 @@ function CircleArrow({ direction = "left", onClick, className = "" }) {
       type="button"
       onClick={onClick}
       aria-label={direction === "left" ? "Previous image" : "Next image"}
-      className={`flex h-[44px] w-[44px] items-center justify-center rounded-full bg-[#a88f53] text-white transition duration-300 hover:scale-105 hover:bg-[#947b43] md:h-[52px] md:w-[52px] ${className}`}
+      className={`flex h-[38px] w-[38px] items-center justify-center rounded-full bg-[#a88f53] text-white transition duration-300 hover:scale-105 hover:bg-[#947b43] md:h-[44px] md:w-[44px] ${className}`}
     >
       <svg
         viewBox="0 0 24 24"
-        className="h-5 w-5"
+        className="h-4 w-4"
         fill="none"
         stroke="currentColor"
         strokeWidth="1.8"
@@ -96,28 +96,28 @@ function RoomCarouselSection({
         {/* Text */}
         <div className={`${reverse ? "order-2 lg:order-1" : "order-2"} max-w-[560px]`}>
           <h2
-            className="text-[46px] font-normal leading-[1] text-[#23354a] sm:text-[60px] md:text-[72px]"
+            className="tmt-3 text-[17px] font-normal leading-[0.98] text-[#23354a] sm:text-[25px] md:text-[30px]"
             style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
           >
             {title}
           </h2>
 
-          <p className="mt-6 text-[18px] font-semibold leading-[1.5] text-[#113a54] sm:text-[19px] md:text-[20px]">
+          <p className="mt-6 text-[12px] font-semibold leading-[1.5] text-[#113a54] sm:text-[13px] md:text-[14px]">
             {subtitle}
           </p>
 
-          <p className="mt-6 text-[17px] leading-[1.8] text-[#171717] sm:text-[18px] md:text-[19px]">
+          <p className="mt-6 text-[11px] leading-[1.8] text-[#171717] sm:text-[12px] md:text-[13px]">
             {description}
           </p>
         </div>
 
         {/* Image */}
         <div className={`${reverse ? "order-1 lg:order-2" : "order-1"} relative`}>
-          <div className="relative overflow-hidden bg-white">
+          <div className="relative overflow-hidden rounded-md bg-white">
             <img
               src={images[current]}
               alt={title}
-              className="h-[320px] w-full object-cover transition-all duration-700 sm:h-[420px] md:h-[520px] lg:h-[620px]"
+              className="h-[260px] w-full rounded-md object-cover transition-all duration-700 sm:h-[340px] md:h-[420px] lg:h-[500px]"
             />
           </div>
 
@@ -162,7 +162,7 @@ export default function RoomBlock() {
         <div className="relative z-20 mx-auto flex min-h-[72vh] max-w-[1600px] items-center justify-center px-5 text-center sm:px-6 md:px-8 lg:px-10">
           <div className="pt-28 pb-16 md:pt-32 md:pb-20">
             <h1
-              className="text-[54px] font-normal leading-[0.95] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)] sm:text-[70px] md:text-[90px] lg:text-[106px]"
+              className="text-[15px] font-normal leading-[0.95] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.2)] sm:text-[20px] md:text-[43px] lg:text-[40px]"
               style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
             >
               Room Blocks
@@ -174,18 +174,18 @@ export default function RoomBlock() {
       {/* INTRO */}
       <section className="bg-[#f1f0eb] py-16 sm:py-20 md:py-24 lg:py-28">
         <div className="mx-auto max-w-[980px] px-5 text-center sm:px-6 md:px-8">
-          <p className="text-[18px] font-normal text-[#a37f58] sm:text-[20px]">
+          <p className="text-[12px] font-normal text-[#a37f58] sm:text-[14px]">
             Meeting Rooms in California
           </p>
 
           <h2
-            className="mt-3 text-[46px] font-normal leading-[0.98] text-[#23354a] sm:text-[60px] md:text-[74px]"
+            className="mt-3 text-[17px] font-normal leading-[0.98] text-[#23354a] sm:text-[25px] md:text-[30px]"
             style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
           >
             Room for Everyone
           </h2>
 
-          <p className="mx-auto mt-6 max-w-[860px] text-[18px] leading-[1.8] text-[#181818] sm:text-[19px] md:text-[20px]">
+          <p className="mx-auto mt-6 max-w-[860px] text-[12px] leading-[1.8] text-[#181818] sm:text-[13px] md:text-[14px]">
             When planning a group or corporate retreat, comfort is key. Choose
             from 68 homelike rooms clustered throughout our property with full
             access to included activities, ranging from country cottages to
@@ -227,7 +227,7 @@ export default function RoomBlock() {
           <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8">
             <span className="h-px flex-1 bg-[#b59a74]" />
             <h2
-              className="shrink-0 text-center text-[34px] font-normal leading-none text-[#23354a] sm:text-[46px] md:text-[60px]"
+              className="shrink-0 text-center text-[20px] font-normal leading-none text-[#23354a] sm:text-[26px] md:text-[32px]"
               style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
             >
               Restful Essentials
@@ -241,9 +241,9 @@ export default function RoomBlock() {
                 {column.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-[16px] leading-[1.7] text-[#161616] sm:text-[17px] md:text-[18px]"
+                    className="flex items-start gap-3 text-[10px] leading-[1.7] text-[#161616] sm:text-[11px] md:text-[12px]"
                   >
-                    <span className="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#9b7a58]" />
+                    <span className="mt-[9px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#9b7a58]" />
                     <span>{item}</span>
                   </li>
                 ))}

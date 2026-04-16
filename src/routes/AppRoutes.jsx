@@ -7,6 +7,7 @@ import GroupeService from "../pages/groupeservice/GroupeService";
 import Package from "../pages/package/Package";
 import RoomBlock from "../pages/RoomBlock/RoomBlock";
 import Garelly from "../pages/Garelly/Garelly";
+import GarellyWedding from "../pages/GarellyWedding/GarellyWedding";
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
         <Route path="packages" element={<Package />} />
         <Route path="room-blocks" element={<RoomBlock />} />
         <Route path="gallery" element={<Garelly />} />
+        <Route path="wedding-gallery" element={<GarellyWedding />} />
       </Route>
     </Routes>
   );

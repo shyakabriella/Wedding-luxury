@@ -26,10 +26,10 @@ function SiteLogo({ isSolid = false, menuVersion = false }) {
         alt="Wonder Valley Logo"
         className={`w-auto object-contain transition-all duration-300 drop-shadow-[0_8px_24px_rgba(0,0,0,0.55)] ${
           menuVersion
-            ? "h-[58px] max-w-[220px] sm:h-[64px]"
+            ? "h-[48px] max-w-[180px] sm:h-[52px]"
             : isSolid
-            ? "h-[86px] max-w-[280px] lg:h-[72px] lg:max-w-[210px]"
-            : "h-[108px] max-w-[360px] lg:h-[78px] lg:max-w-[240px]"
+            ? "h-[68px] max-w-[220px] lg:h-[58px] lg:max-w-[170px]"
+            : "h-[86px] max-w-[280px] lg:h-[62px] lg:max-w-[190px]"
         }`}
       />
     </Link>
@@ -115,27 +115,27 @@ export default function Header() {
           {/* Mobile */}
           <div
             className={`flex items-center justify-center lg:hidden transition-all duration-300 ${
-              hasSolidHeader ? "min-h-[92px]" : "min-h-[118px]"
+              hasSolidHeader ? "min-h-[72px]" : "min-h-[92px]"
             }`}
           >
             <SiteLogo isSolid={hasSolidHeader} />
           </div>
 
           {/* Desktop */}
-          <div className="hidden lg:grid lg:min-h-[84px] lg:grid-cols-[260px_minmax(0,1fr)_260px] lg:items-center lg:gap-6 xl:min-h-[88px]">
+          <div className="hidden lg:grid lg:min-h-[68px] lg:grid-cols-[220px_minmax(0,1fr)_220px] lg:items-center lg:gap-6 xl:min-h-[72px]">
             {/* Logo */}
             <div className="flex items-center">
               <SiteLogo isSolid={hasSolidHeader} />
             </div>
 
             {/* Center nav */}
-            <nav className="flex items-center justify-center gap-8 xl:gap-12">
+            <nav className="flex items-center justify-center gap-6 xl:gap-10">
               {navLinks.map((item) => (
                 <NavLink
                   key={item.label}
                   to={item.href}
                   className={({ isActive }) =>
-                    `relative inline-flex items-center justify-center pb-1 text-[15px] font-light uppercase tracking-[0.08em] transition xl:text-[16px] ${
+                    `relative inline-flex items-center justify-center pb-1 text-[13px] font-light uppercase tracking-[0.08em] transition xl:text-[14px] ${
                       isActive
                         ? "text-white"
                         : "text-white/95 hover:text-white"
@@ -146,7 +146,7 @@ export default function Header() {
                     <span className="relative">
                       {item.label}
                       <span
-                        className={`absolute -bottom-[10px] left-0 h-[1.5px] w-full bg-white/90 origin-center transition-all duration-300 ${
+                        className={`absolute -bottom-[8px] left-0 h-[1.5px] w-full bg-white/90 origin-center transition-all duration-300 ${
                           isActive ? "scale-x-100" : "scale-x-0"
                         }`}
                       />
@@ -160,7 +160,7 @@ export default function Header() {
             <div className="flex items-center justify-end">
               <Link
                 to="/start-planning"
-                className="inline-flex min-h-[44px] min-w-[210px] items-center justify-center bg-[#a8914f] px-8 text-[15px] font-medium uppercase tracking-[0.16em] text-white transition hover:bg-[#947f46] xl:min-h-[46px] xl:min-w-[220px]"
+                className="inline-flex min-h-[38px] min-w-[180px] items-center justify-center bg-[#a8914f] px-6 text-[13px] font-medium uppercase tracking-[0.16em] text-white transition hover:bg-[#947f46] xl:min-h-[40px] xl:min-w-[190px]"
               >
                 Start Planning
               </Link>
@@ -172,7 +172,7 @@ export default function Header() {
         <div
           className={`overflow-hidden transition-all duration-300 lg:hidden ${
             mobileOpen
-              ? "max-h-[420px] border-t border-white/15 opacity-100"
+              ? "max-h-[380px] border-t border-white/15 opacity-100"
               : "max-h-0 opacity-0"
           }`}
         >
@@ -182,7 +182,7 @@ export default function Header() {
               <button
                 type="button"
                 onClick={() => setMobileOpen(false)}
-                className="text-[28px] leading-none text-white"
+                className="text-[24px] leading-none text-white"
                 aria-label="Close menu"
               >
                 ×
@@ -196,7 +196,7 @@ export default function Header() {
                   to={item.href}
                   onClick={() => setMobileOpen(false)}
                   className={({ isActive }) =>
-                    `border-b border-white/10 py-4 text-sm uppercase tracking-[0.12em] transition ${
+                    `border-b border-white/10 py-3 text-[12px] uppercase tracking-[0.12em] transition ${
                       isActive
                         ? "text-[#e4d3a0]"
                         : "text-white hover:text-[#e4d3a0]"
@@ -210,7 +210,7 @@ export default function Header() {
               <Link
                 to="/start-planning"
                 onClick={() => setMobileOpen(false)}
-                className="mt-4 inline-flex min-h-[48px] items-center justify-center bg-[#a8914f] px-5 text-sm font-medium uppercase tracking-[0.14em] text-white transition hover:bg-[#947f46]"
+                className="mt-3 inline-flex min-h-[42px] items-center justify-center bg-[#a8914f] px-4 text-[12px] font-medium uppercase tracking-[0.14em] text-white transition hover:bg-[#947f46]"
               >
                 Start Planning
               </Link>

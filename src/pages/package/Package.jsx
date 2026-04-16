@@ -1,101 +1,83 @@
 import React, { useEffect } from "react";
 
 const classicPackage = [
-  "3 Buffet-Style Hors D’Oeuvres",
-  "1 Classic Salad",
+  "3 Hors D’Oeuvres",
+  "1 Salad",
   "2 Entrées",
   "1 Veggie",
   "1 Starch",
-  "Fresh-Baked Bread",
+  "Fresh Bread",
 ];
 
 const premiumPackage = [
-  "4 Buffet-Style Hors D’Oeuvres",
+  "4 Hors D’Oeuvres",
   "1 Premium Salad",
   "3 Entrées",
   "2 Veggies",
   "2 Starches",
-  "Fresh-Baked Bread",
-  "Enhanced Dessert Display",
+  "Fresh Bread",
+  "Dessert Display",
 ];
 
 const includedInEveryPackage = [
-  "Exclusive Venue Access",
+  "Venue Access",
   "Reception Space",
-  "Two Wedding Party Rooms",
-  "Tables, Chairs, & Linens",
-  "Complimentary Food Tasting",
+  "2 Bridal Rooms",
+  "Tables & Chairs",
+  "Food Tasting",
   "Ceremony Garden",
-  "Day-Of Coordinator",
-  "Complimentary Guest Parking",
+  "Event Coordinator",
+  "Guest Parking",
   "On-Site Catering",
-  "Complimentary Cake Cutting",
+  "Cake Planning",
   "Hors D’oeuvres Patio",
-  "Dedicated Event Team",
-  "Discounted Guest Room Blocks",
-  "Customizable Menus",
-  "Hand-Poured Sparkling Cider Toast",
+  "Event Team",
+  "Room Discounts",
+  "Custom Menus",
+  "Cider Toast",
 ];
 
 const drinkPackageInfo = [
-  "ABC License",
-  "Glassware",
-  "Unlimited Open Bar for Guests 21 and Over. Guests must drink responsibly.",
-  "1 Bartender per 125 Guests (Additional Bartenders $250)",
-  "1 Bar Setup ($400 for an additional bar setup and 1 bartender)",
-  "*Consumption or Cash Bars Available Upon Request",
+  "Bar License",
+  "Glassware Included",
+  "Open Bar (21+)",
+  "1 Bartender / 125 Guests",
+  "Extra Bar Setup Available",
+  "Cash & Consumption Bars",
 ];
 
 const drinkCards = [
   {
     title: "SIMPLE",
     image: "/images/bar2.jpg",
-    items: ["Beer", "Wine", "Mocktails", "Sodas, Juice"],
+    items: ["Beer", "Wine", "Mocktails", "Juices"],
   },
   {
     title: "TOP SHELF",
     image: "/images/bar2.png",
-    items: [
-      "Beer",
-      "Wine",
-      "Premium Bar Selections",
-      "Mocktails",
-      "Sodas, Juice, Mixers, Garnishes",
-    ],
+    items: ["Beer", "Wine", "Premium Spirits", "Mixers"],
   },
   {
     title: "HOUSE",
     image: "images/luxdinning1.jpg",
-    items: [
-      "Beer",
-      "Wine",
-      "House Liquor Selections",
-      "Mocktails",
-      "Sodas, Juice, Mixers, Garnishes",
-    ],
+    items: ["Beer", "Wine", "House Liquor", "Mixers"],
   },
   {
     title: "CALL",
     image: "images/luxuryfooddecoration6.JPG",
-    items: [
-      "Beer",
-      "Wine",
-      "Classic Liquor Selections",
-      "Mocktails",
-      "Sodas, Juice, Mixers, Garnishes",
-    ],
+    items: ["Beer", "Wine", "Classic Spirits", "Mixers"],
   },
 ];
 
-function BulletList({ items, textClass = "" }) {
+function BulletList({ items }) {
   return (
-    <ul className="space-y-5">
+    <ul className="space-y-4">
       {items.map((item) => (
         <li
           key={item}
-          className={`flex items-start gap-4 text-[16px] leading-[1.8] text-[#202020] sm:text-[17px] md:text-[18px] ${textClass}`}
+          className="flex items-start gap-3 text-[11px] leading-[1.7] text-[#202020] sm:text-[12px] md:text-[13px]"
         >
-          <span className="mt-[12px] h-[6px] w-[6px] shrink-0 rounded-full bg-[#8e7355]" />
+          <span className="mt-[10px] h-[5px] w-[5px] shrink-0 rounded-full bg-[#8e7355]" />
           <span>{item}</span>
         </li>
       ))}
@@ -113,35 +95,29 @@ function PackageSplitSection({
   return (
     <section
       className={`bg-[#f3f2ed] py-10 sm:py-14 md:py-16 lg:py-20 ${
-        topBorder ? "border-t-[10px] border-[#14363a]" : ""
+        topBorder ? "border-t-[8px] border-[#14363a]" : ""
       }`}
     >
       <div
-        className={`mx-auto grid max-w-[1320px] grid-cols-1 items-start gap-10 px-5 sm:px-6 md:px-8 lg:gap-16 lg:px-10 ${
+        className={`mx-auto grid max-w-[1320px] grid-cols-1 items-start gap-10 px-5 lg:gap-16 ${
           reverse ? "lg:grid-cols-[1fr_0.95fr]" : "lg:grid-cols-[0.95fr_1fr]"
         }`}
       >
-        <div className={`${reverse ? "order-2 lg:order-2" : "order-1"}`}>
-          <img
-            src={image}
-            alt={title}
-            className="h-[340px] w-full object-cover sm:h-[440px] md:h-[560px] lg:h-[620px]"
-          />
-        </div>
+        <img
+          src={image}
+          alt={title}
+          className="h-[340px] w-full rounded-md object-cover sm:h-[420px] md:h-[520px]"
+        />
 
-        <div
-          className={`max-w-[560px] ${
-            reverse ? "order-1 lg:order-1" : "order-2"
-          }`}
-        >
+        <div className="max-w-[560px]">
           <h2
-            className="text-[42px] font-normal leading-[0.95] text-[#173247] sm:text-[56px] md:text-[68px]"
+            className="text-[16px] font-normal text-[#173247] sm:text-[18px] md:text-[24px]"
             style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
           >
             {title}
           </h2>
 
-          <div className="mt-8">
+          <div className="mt-6">
             <BulletList items={items} />
           </div>
         </div>
@@ -153,20 +129,18 @@ function PackageSplitSection({
 function DrinkCard({ card }) {
   return (
     <div>
-      <div className="overflow-hidden bg-white">
-        <img
-          src={card.image}
-          alt={card.title}
-          className="h-[240px] w-full object-cover sm:h-[280px] md:h-[300px] lg:h-[320px]"
-        />
-      </div>
+      <img
+        src={card.image}
+        alt={card.title}
+        className="h-[220px] w-full rounded-md object-cover sm:h-[260px]"
+      />
 
-      <div className="pt-6">
-        <h3 className="text-[24px] uppercase leading-[1.2] text-[#153347] md:text-[26px]">
+      <div className="pt-5">
+        <h3 className="text-[12px] uppercase text-[#153347] md:text-[14px]">
           {card.title}
         </h3>
 
-        <div className="mt-6">
+        <div className="mt-4">
           <BulletList items={card.items} />
         </div>
       </div>
@@ -180,147 +154,106 @@ export default function Package() {
   }, []);
 
   return (
-    <div
-      className="w-full overflow-hidden bg-[#f3f2ed] text-[#1d1d1d]"
-      style={{ fontFamily: "Montserrat, sans-serif" }}
-    >
+    <div className="w-full overflow-hidden bg-[#f3f2ed]" style={{ fontFamily: "Montserrat" }}>
+      
       {/* HERO */}
-      <section className="relative min-h-[68vh] overflow-hidden">
-        <img
-          src="/images/weddgarden2.jpg"
-          alt="Wedding packages hero"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-[rgba(18,16,14,0.35)]" />
-        <div className="absolute left-0 right-0 top-[118px] z-10 hidden border-t border-white/40 lg:block" />
+      <section className="relative min-h-[68vh]">
+        <img src="/images/weddgarden2.jpg" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-black/40" />
 
-        <div className="relative z-20 mx-auto flex min-h-[68vh] max-w-[1600px] items-center justify-center px-5 text-center sm:px-6 md:px-8 lg:px-10">
-          <div className="pt-28 pb-16 md:pt-32 md:pb-20">
-            <h1
-              className="text-[56px] font-normal leading-[0.95] text-white sm:text-[72px] md:text-[92px] lg:text-[108px]"
-              style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
-            >
-              Packages
-            </h1>
-          </div>
+        <div className="relative z-10 flex h-[68vh] items-center justify-center text-center text-white">
+          <h1 className="text-[26px] sm:text-[34px] md:text-[44px] font-light">
+            Packages
+          </h1>
         </div>
       </section>
 
       {/* INTRO */}
-      <section className="bg-[#f3f2ed] py-16 sm:py-20 md:py-24 lg:py-28">
-        <div className="mx-auto max-w-[980px] px-5 text-center sm:px-6 md:px-8">
-          <p className="text-[17px] tracking-[0.04em] text-[#a37f58] sm:text-[19px]">
-            Wedding Packages in Luxury Garden Palace
-          </p>
+      <section className="py-14 text-center">
+        <p className="text-[12px] text-[#a37f58]">Wedding Packages</p>
 
-          <h2
-            className="mt-3 text-[46px] font-normal leading-[0.95] text-[#173247] sm:text-[58px] md:text-[72px]"
-            style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
-          >
-            Bringing It All Together
-          </h2>
+        <h2 className="mt-2 text-[20px] sm:text-[28px] md:text-[34px] text-[#173247]">
+          Simple Luxury Options
+        </h2>
 
-          <p className="mx-auto mt-6 max-w-[840px] text-[17px] leading-[1.9] text-[#222] sm:text-[18px] md:text-[19px]">
-            Once you book your date with Luxury Garden Palace, pop the bubbly
-            and let's celebrate! Whether you're dreaming of an intimate wedding
-            ceremony or a grand celebration, you can trust us to turn your
-            vision into the special day you've always imagined with some of the
-            best—and most inclusive—wedding packages in Kigali, Rwanda.
-          </p>
-        </div>
+        <p className="mx-auto mt-4 max-w-[750px] text-[12px] sm:text-[13px] text-[#222]">
+          Flexible wedding packages designed for luxury apartments and elegant celebrations in Kigali.
+        </p>
       </section>
 
-      {/* CLASSIC PACKAGE */}
+      {/* PACKAGES */}
       <PackageSplitSection
-        title="The Classic Package"
+        title="Classic Package"
         items={classicPackage}
         image="/images/desert2.jpg"
         topBorder
       />
 
-      {/* PREMIUM PACKAGE */}
       <PackageSplitSection
-        title="The Premium Package"
+        title="Premium Package"
         items={premiumPackage}
         image="images/exterior12.jpg"
         reverse
       />
 
-      {/* INCLUDED IN EVERY PACKAGE */}
-      <section className="bg-[#fbfbfb] py-16 sm:py-20 md:py-24 lg:py-28">
-        <div className="mx-auto max-w-[1380px] px-5 sm:px-6 md:px-8 lg:px-10">
-          <div className="flex items-center justify-center gap-6">
-            <span className="hidden h-px w-[170px] bg-[#b89a6b] md:block" />
-            <h2
-              className="text-center text-[42px] font-normal leading-[1] text-[#173247] sm:text-[56px] md:text-[68px]"
-              style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
-            >
-              Included In Every Package
-            </h2>
-            <span className="hidden h-px w-[170px] bg-[#b89a6b] md:block" />
-          </div>
+      {/* INCLUDED */}
+<section className="bg-white py-14">
+  
+  {/* Title */}
+  <div className="text-center">
+    <h2 className="text-[18px] sm:text-[24px] md:text-[30px] text-[#173247]">
+      Included Benefits
+    </h2>
+  </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
-            {[0, 1, 2].map((col) => (
-              <ul key={col} className="space-y-5">
-                {includedInEveryPackage
-                  .slice(col * 5, col * 5 + 5)
-                  .map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-4 text-[16px] leading-[1.8] text-[#222] sm:text-[17px] md:text-[18px]"
-                    >
-                      <span className="mt-[12px] h-[6px] w-[6px] shrink-0 rounded-full bg-[#8d6f53]" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-              </ul>
+  {/* Grid Wrapper */}
+  <div className="mt-12 flex justify-center">
+    
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-10 text-center">
+
+      {[0, 1, 2].map((col) => (
+        <ul
+          key={col}
+          className="space-y-4 flex flex-col items-center"
+        >
+          {includedInEveryPackage
+            .slice(col * 5, col * 5 + 5)
+            .map((item) => (
+              <li
+                key={item}
+                className="text-[11px] sm:text-[12px] text-[#222] flex items-center justify-center gap-3"
+              >
+                <span className="h-[5px] w-[5px] rounded-full bg-[#8d6f53]" />
+                <span className="max-w-[220px] leading-[1.6]">
+                  {item}
+                </span>
+              </li>
             ))}
-          </div>
+        </ul>
+      ))}
 
-          <div className="mt-16 border-b border-[#b9a27e]" />
-        </div>
-      </section>
+    </div>
+  </div>
 
-      {/* DRINK PACKAGES HERO SECTION */}
-      <section className="relative overflow-hidden py-16 sm:py-20 md:py-24 lg:py-28">
-        <img
-          src="/images/drink.png"
-          alt="Drink packages"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-white/25" />
+</section>
 
-        <div className="relative z-10 mx-auto max-w-[1600px] px-5 sm:px-6 md:px-8 lg:px-10">
-          <div className="max-w-[760px] bg-[#f6f5f2] p-8 sm:p-10 md:p-12 lg:ml-[6%] lg:p-14">
-            <h2
-              className="text-[44px] font-normal leading-[0.96] text-[#173247] sm:text-[56px] md:text-[68px]"
-              style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
-            >
-              Drink Packages
-            </h2>
+      {/* DRINK */}
+      <section className="py-14 text-center bg-[#f3f2ed]">
+        <h2 className="text-[20px] sm:text-[26px] text-[#173247]">
+          Bar Packages
+        </h2>
 
-            <p className="mt-6 text-[16px] leading-[1.9] text-[#222] sm:text-[17px] md:text-[18px]">
-              We offer a fully licensed bar service package with friendly and
-              professional bartenders ready to serve delicious cocktails, beer,
-              and wine throughout your event! Included:
-            </p>
-
-            <div className="mt-8">
-              <BulletList items={drinkPackageInfo} />
-            </div>
-          </div>
-        </div>
+        <p className="mt-3 text-[12px] max-w-[700px] mx-auto">
+          Premium bar service for luxury weddings and apartment events.
+        </p>
       </section>
 
       {/* DRINK CARDS */}
-      <section className="bg-[#f3f2ed] py-16 sm:py-20 md:py-24">
-        <div className="mx-auto max-w-[1380px] px-5 sm:px-6 md:px-8 lg:px-10">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-12 xl:gap-16">
-            {drinkCards.map((card) => (
-              <DrinkCard key={card.title} card={card} />
-            ))}
-          </div>
+      <section className="pb-20">
+        <div className="grid md:grid-cols-2 gap-10 px-6">
+          {drinkCards.map((card) => (
+            <DrinkCard key={card.title} card={card} />
+          ))}
         </div>
       </section>
     </div>

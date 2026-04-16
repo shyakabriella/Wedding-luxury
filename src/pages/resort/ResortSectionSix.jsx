@@ -76,7 +76,7 @@ export default function ResortSectionSix() {
         {/* Section Title */}
         <div className="text-center">
           <h2
-            className="text-[30px] font-normal leading-[1] text-[#223244] sm:text-[38px] md:text-[48px] lg:text-[56px]"
+            className="text-[22px] font-normal leading-[1] text-[#223244] sm:text-[28px] md:text-[34px] lg:text-[38px]"
             style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
           >
             Our Favorite Success Stories
@@ -107,16 +107,16 @@ export default function ResortSectionSix() {
 
           <div className="mx-auto w-full max-w-[820px] px-12 text-center">
             <div key={current} className={animate ? "testimonial-fade-up" : ""}>
-              <h3 className="text-[20px] font-semibold leading-[1.35] text-[#233f43] md:text-[24px]">
+              <h3 className="text-[16px] font-semibold leading-[1.35] text-[#233f43] md:text-[18px]">
                 {testimonials[current].title}
               </h3>
-
-              <p className="mx-auto mt-4 max-w-[720px] text-[17px] leading-[1.65] text-[#1f1f1f] md:text-[18px]">
-                “{testimonials[current].quote}”
+              
+              <p className="mx-auto mt-4 max-w-[720px] text-[14px] leading-[1.65] text-[#1f1f1f] md:text-[15px]">
+                "{testimonials[current].quote}"
               </p>
-
+              
               <p
-                className="mt-5 text-[16px] italic text-[#2a2a2a]"
+                className="mt-5 text-[13px] italic text-[#2a2a2a]"
                 style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
               >
                 -{testimonials[current].author}
@@ -149,16 +149,16 @@ export default function ResortSectionSix() {
         <div className="mt-7 md:hidden">
           <div className="text-center">
             <div key={current} className={animate ? "testimonial-fade-up" : ""}>
-              <h3 className="text-[20px] font-semibold leading-[1.35] text-[#233f43]">
+              <h3 className="text-[16px] font-semibold leading-[1.35] text-[#233f43]">
                 {testimonials[current].title}
               </h3>
-
-              <p className="mx-auto mt-4 max-w-[660px] text-[15px] leading-[1.75] text-[#1f1f1f] sm:text-[16px]">
-                “{testimonials[current].quote}”
+              
+              <p className="mx-auto mt-4 max-w-[660px] text-[13px] leading-[1.75] text-[#1f1f1f] sm:text-[14px]">
+                "{testimonials[current].quote}"
               </p>
-
+              
               <p
-                className="mt-5 text-[15px] italic text-[#2a2a2a]"
+                className="mt-5 text-[13px] italic text-[#2a2a2a]"
                 style={{ fontFamily: '"Cormorant Garamond", Georgia, serif' }}
               >
                 -{testimonials[current].author}
