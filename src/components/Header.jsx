@@ -159,7 +159,7 @@ export default function Header() {
             {/* CTA */}
             <div className="flex items-center justify-end">
               <a
-                href="mailto:luxurygarden250@gmail.com?subject=General Application"
+                href="https://direct-book.com/properties/luxurygardenpalace/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-04-18&checkOutDate=2026-04-19&trackPage=no"
                 className="inline-flex min-h-[38px] min-w-[180px] items-center justify-center bg-[#a8914f] px-6 text-[13px] font-medium uppercase tracking-[0.16em] text-white transition hover:bg-[#947f46] xl:min-h-[40px] xl:min-w-[190px]"
               >
                 Start Planning
