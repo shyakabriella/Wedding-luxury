@@ -158,12 +158,12 @@ export default function Header() {
 
             {/* CTA */}
             <div className="flex items-center justify-end">
-              <Link
-                to="/start-planning"
+              <a
+                href="mailto:luxurygarden250@gmail.com?subject=General Application"
                 className="inline-flex min-h-[38px] min-w-[180px] items-center justify-center bg-[#a8914f] px-6 text-[13px] font-medium uppercase tracking-[0.16em] text-white transition hover:bg-[#947f46] xl:min-h-[40px] xl:min-w-[190px]"
               >
                 Start Planning
-              </Link>
+              </a>
             </div>
           </div>
         </div>
