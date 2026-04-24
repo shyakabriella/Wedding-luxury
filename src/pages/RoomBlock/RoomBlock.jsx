@@ -175,7 +175,7 @@ export default function RoomBlock() {
       <section className="bg-[#f1f0eb] py-16 sm:py-20 md:py-24 lg:py-28">
         <div className="mx-auto max-w-[980px] px-5 text-center sm:px-6 md:px-8">
           <p className="text-[12px] font-normal text-[#a37f58] sm:text-[14px]">
-            Meeting Rooms in California
+            Meeting Rooms in Luxury
           </p>
 
           <h2
@@ -186,12 +186,14 @@ export default function RoomBlock() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-[860px] text-[12px] leading-[1.8] text-[#181818] sm:text-[13px] md:text-[14px]">
-            When planning a group or corporate retreat, comfort is key. Choose
-            from 68 homelike rooms clustered throughout our property with full
-            access to included activities, ranging from country cottages to
-            resort-style spaces overlooking serene California landscapes. For
-            larger groups, 52 of the rooms can be converted to family- or
-            dormitory-style spaces.
+            When planning a group or corporate retreat, comfort is key.
+             Choose from 68 luxury apartment-style rooms and suites spread
+              across our property, designed for premium comfort and modern 
+              living in the heart of Rwanda. Guests enjoy full access to curated 
+              on-site experiences and amenities, with options ranging from elegant 
+              private suites to spacious resort-style apartments overlooking serene Rwandan landscapes
+              . For larger groups, 52 of the units can be flexibly configured into family-style or
+             shared dormitory-style spaces, making it ideal for both privacy and group stays.
           </p>
         </div>
       </section>
