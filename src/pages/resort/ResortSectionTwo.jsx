@@ -443,9 +443,142 @@
 
 
 
+// import React, { useEffect, useState } from "react";
+
+// const API_URL = "http://127.0.0.1:8000/api";
+
+// export default function ResortSectionTwo() {
+//   const [data, setData] = useState(null);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState(null);
+
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         console.log("Fetching from:", `${API_URL}/wedding/section1/venue`);
+//         const response = await fetch(`${API_URL}/wedding/section1/venue`);
+//         const result = await response.json();
+//         console.log("API Result:", result);
+        
+//         if (result.success && result.data) {
+//           setData(result.data);
+//         } else {
+//           setError("No data found");
+//         }
+//       } catch (err) {
+//         console.error("Error:", err);
+//         setError(err.message);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+
+//     fetchData();
+//   }, []);
+
+//   if (loading) {
+//     return (
+//       <div className="py-20 text-center">
+//         <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-amber-500 border-t-transparent" />
+//         <p className="mt-2 text-gray-500">Loading section data...</p>
+//       </div>
+//     );
+//   }
+
+//   if (error) {
+//     return (
+//       <div className="py-20 text-center text-red-500">
+//         <p>Error: {error}</p>
+//       </div>
+//     );
+//   }
+
+//   if (!data) {
+//     return (
+//       <div className="py-20 text-center text-gray-500">
+//         <p>No data available. Please add content in the admin dashboard.</p>
+//       </div>
+//     );
+//   }
+
+//   const images = data.images || [];
+//   const leftImage = images[0] || "/images/tent4.png";
+//   const bottomRightImage = images[1] || "/images/weddinghall1.png";
+
+//   return (
+//     <div className="py-20 bg-[#f3f2ec]">
+//       <div className="container mx-auto px-4">
+//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+//           {/* Left Tall Image - FIRST IMAGE */}
+//           <div>
+//             <img 
+//               src={leftImage}
+//               alt={data.title}
+//               className="w-full h-[500px] object-cover rounded-lg"
+//               onError={(e) => {
+//                 console.log("Left image failed to load:", leftImage);
+//                 e.target.src = "/images/tent4.png";
+//               }}
+//             />
+//           </div>
+          
+//           {/* Right Content */}
+//           <div>
+//             <p className="text-amber-600 text-sm uppercase tracking-wider">
+//               {data.subtitle || "Wedding Venues Luxury"}
+//             </p>
+//             <h2 className="text-3xl md:text-4xl font-serif text-[#18334a] mt-2">
+//               {data.title || "Envision Your Special Day"}
+//             </h2>
+//             <p className="text-gray-600 mt-4 leading-relaxed">
+//               {data.description || "Luxury Garden Palace is a frontrunner in wedding venues..."}
+//             </p>
+//             <a 
+//               href="/wedding-gallery" 
+//               className="inline-block mt-6 bg-[#a38b4c] text-white px-6 py-3 rounded-md hover:bg-[#8f7941] transition"
+//             >
+//               Take A Tour
+//             </a>
+
+//             {/* Bottom Right Image - SECOND IMAGE */}
+//             <div className="mt-10">
+//               <img 
+//                 src={bottomRightImage}
+//                 alt="Wedding celebration"
+//                 className="w-full h-[250px] object-cover rounded-lg mt-8"
+//                 onError={(e) => {
+//                   console.log("Bottom right image failed to load:", bottomRightImage);
+//                   e.target.src = "/images/weddinghall1.png";
+//                 }}
+//               />
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useEffect, useState } from "react";
 
-const API_URL = "http://127.0.0.1:8000/api";
+// Use environment variable for production
+const API_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000/api";
 
 export default function ResortSectionTwo() {
   const [data, setData] = useState(null);
