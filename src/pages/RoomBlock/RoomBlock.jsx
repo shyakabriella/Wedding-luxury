@@ -109,6 +109,15 @@ function RoomCarouselSection({
           <p className="mt-6 text-[11px] leading-[1.8] text-[#171717] sm:text-[12px] md:text-[13px]">
             {description}
           </p>
+
+          <a
+            href="https://direct-book.com/properties/luxurygardenpalace?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-04-29&checkOutDate=2026-04-30&trackPage=yes"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-block rounded-md bg-[#a88f53] px-6 py-2 text-[11px] font-semibold text-white transition duration-300 hover:scale-105 hover:bg-[#947b43] sm:px-8 sm:py-3 sm:text-[12px] md:text-[13px]"
+          >
+            Book Now
+          </a>
         </div>
 
         {/* Image */}
