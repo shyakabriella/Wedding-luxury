@@ -581,4 +581,4 @@ export default function ResortSectionFour() {
       </div>
     </section>
   );
-}
+};
